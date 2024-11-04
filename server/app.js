@@ -5,7 +5,7 @@ const logger = require("morgan");
 const cors = require("cors");
 
 const indexRouter = require("./routes/index");
-const usersRouter = require("./routes/users");
+const amigurumisRouter = require("./routes/amigurumis");
 
 const app = express();
 
@@ -17,6 +17,6 @@ app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/api", indexRouter);
-app.use("/api/users", usersRouter);
+app.use("/api/amigurumis", amigurumisRouter);
 
 module.exports = app;
