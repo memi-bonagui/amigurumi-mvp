@@ -5,10 +5,7 @@ const amigurumisController = require("../controllers/amigurumisController");
 // any route in this file is pre-pended with /api/amigurumis
 /* GET amigurumis listing. */
 router.get("/", amigurumisController.getAmigurumis);
-
 router.get("/pieces", amigurumisController.getAllPieces);
-
-// router.get("/:id", amigurumisController.getAmigurumiById);
 
 router.get("/:id", amigurumisController.getFullAmigurumiById);
 
@@ -18,6 +15,15 @@ router.post("/", amigurumisController.addAmigurumi);
 
 router.post("/:id/pieces", amigurumisController.addPiece);
 
-router.patch("/:id", amigurumisController.updateAmigurumiIsCompleted);
+router.patch(
+  "/:id/isCompleted",
+  amigurumisController.updateAmigurumiIsCompleted
+);
+
+router.patch("/:id/isFavorite", amigurumisController.updateAmigurumiIsFavorite); // change route
+
+router.delete("/:id", amigurumisController.deleteAmigurumi);
+
+router.delete("/:id/pieces/:piecesId", amigurumisController.deletePiece);
 
 module.exports = router;

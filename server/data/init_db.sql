@@ -21,7 +21,7 @@ CREATE TABLE `amigurumis`(
     `imageUrl` VARCHAR(255) NOT NULL
 );
 ALTER TABLE
-    `pieces` ADD CONSTRAINT `pieces_amigurumi_id_foreign` FOREIGN KEY(`amigurumi_id`) REFERENCES `amigurumis`(`id`);
+    `pieces` ADD CONSTRAINT `pieces_amigurumi_id_foreign` FOREIGN KEY(`amigurumi_id`) REFERENCES `amigurumis`(`id`) ON DELETE CASCADE;
 
 -- Insert some sample data
 
