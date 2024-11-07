@@ -1,19 +1,19 @@
-import axios from "axios";
-
+import Banner from "./components/Banner";
+import Menu from "./components/Menu";
+import Form from "./components/Form";
+import PatternCard from "./components/PatternCard";
+import PatternGallery from "./components/PatternGallery";
 import "./App.css";
 
 function App() {
-  const testFetch = async () => {
-    // because of our proxy in vite.config, we can now fetch directly to "/api"
-    const response = await axios.get("/api");
-    console.log(response);
-  };
-
-  testFetch();
   return (
-    <>
-      <h1>anfakjfnkan</h1>
-    </>
+    <div>
+      <Banner />
+      <Menu />
+      <Form />
+      <PatternCard />
+      <PatternGallery />
+    </div>
   );
 }
 
