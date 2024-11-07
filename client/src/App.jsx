@@ -1,8 +1,7 @@
 import Banner from "./components/Banner";
 import Menu from "./components/Menu";
-import Form from "./components/Form";
-import PatternCard from "./components/PatternCard";
-import PatternGallery from "./components/PatternGallery";
+import CreateAmigurumi from "./views/CreateAmigurumi";
+import PatternGallery from "./views/PatternGallery";
 import "./App.css";
 
 function App() {
@@ -10,8 +9,7 @@ function App() {
     <div>
       <Banner />
       <Menu />
-      <Form />
-      <PatternCard />
+      <CreateAmigurumi />
       <PatternGallery />
     </div>
   );
