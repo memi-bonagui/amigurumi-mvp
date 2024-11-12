@@ -7,10 +7,10 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Banner />
-      <Menu />
+      {/* <Banner />
+      <Menu /> */}
       <CreateAmigurumi />
-      <PatternGallery />
+      {/* <PatternGallery /> */}
     </div>
   );
 }

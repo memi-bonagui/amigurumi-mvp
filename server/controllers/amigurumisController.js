@@ -84,9 +84,6 @@ const getPiecesByAmigurumiId = async (req, res) => {
 const addAmigurumi = async (req, res) => {
   try {
     const { name, supplies, isCompleted, isFavorite, imageUrl } = req.body;
-    await pool.query(
-      `INSERT INTO amigurumis (name, supplies, isCompleted, isFavorite, imageUrl) VALUES ('${name}', '${supplies}', ${isCompleted}, ${isFavorite}, '${imageUrl}');`
-    );
 
     if (
       !name ||
@@ -99,8 +96,16 @@ const addAmigurumi = async (req, res) => {
         error: "Failed to create amigurumi",
       });
     }
+    // console.log(
+    //   `INSERT INTO amigurumis (name, supplies, isCompleted, isFavorite, imageUrl) VALUES ('${name}', '${supplies}', ${isCompleted}, ${isFavorite}, '${imageUrl}')`
+    // );
+    const [result] = await pool.query(
+      `INSERT INTO amigurumis (name, supplies, isCompleted, isFavorite, imageUrl) VALUES ('${name}', '${supplies}', ${isCompleted}, ${isFavorite}, '${imageUrl}');`
+    );
 
-    res.status(201).send({ message: "Amigurumi added" });
+    res
+      .status(201)
+      .send({ message: "Amigurumi added", amigurumiId: result.insertId });
   } catch (error) {
     console.log(error.message);
     return res.status(500).json({
@@ -113,17 +118,17 @@ const addPiece = async (req, res) => {
   try {
     const { id } = req.params;
     const { piece_name, pattern } = req.body;
-    await pool.query(
-      `INSERT INTO pieces (piece_name, pattern, amigurumi_id) VALUES ('${piece_name}', '${pattern}', ${id});`
-    );
 
     if (!piece_name || !pattern) {
       return res.status(400).json({
         error: "Failed to create piece",
       });
     }
+    const [result] = await pool.query(
+      `INSERT INTO pieces (piece_name, pattern, amigurumi_id) VALUES ('${piece_name}', '${pattern}', ${id});`
+    );
 
-    res.status(201).send({ message: "Piece added" });
+    res.status(201).send({ message: "Piece added", pieceId: result.insertId });
   } catch (error) {
     console.log(error.message);
     return res.status(500).json({
