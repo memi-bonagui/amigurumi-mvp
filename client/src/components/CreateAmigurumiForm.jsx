@@ -16,14 +16,6 @@ const CreateAmigurumiForm = ({ setCreatedAmigurumiId }) => {
     setAmigurumiForm((prev) => ({ ...prev, [name]: value })); // referenciar valor con []
   };
 
-  // const handleCheckboxChange = (event) => {
-  //   const { name, value } = event.target;
-  //   const { checked } = event.target.checked;
-  //   console.log({ name, value, checked });
-  //   console.log(event.target);
-  //   setAmigurumiForm((prev) => ({ ...prev, [name]: value }));
-  // };
-
   const handleSubmit = async (event) => {
     try {
       event.preventDefault();

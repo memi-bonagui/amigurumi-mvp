@@ -1,6 +1,6 @@
-import Banner from "./components/Banner";
-import Menu from "./components/Menu";
-import CreateAmigurumi from "./views/CreateAmigurumi";
+// import Banner from "./components/Banner";
+// import Menu from "./components/Menu";
+// import CreateAmigurumi from "./views/CreateAmigurumi";
 import PatternGallery from "./views/PatternGallery";
 import "./App.css";
 
@@ -9,8 +9,8 @@ function App() {
     <div>
       {/* <Banner />
       <Menu /> */}
-      <CreateAmigurumi />
-      {/* <PatternGallery /> */}
+      {/* <CreateAmigurumi /> */}
+      <PatternGallery />
     </div>
   );
 }
