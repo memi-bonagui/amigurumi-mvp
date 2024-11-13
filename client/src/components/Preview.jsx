@@ -3,6 +3,7 @@ import AmigurumiDisplay from "./AmigurumiDisplay";
 import axios from "axios";
 import { useEffect } from "react";
 import PiecesDisplay from "./PiecesDisplay";
+import NoAmigurumiAlert from "./NoAmigurumiAlert";
 
 const Preview = ({ createdAmigurumiId, createPiecesId }) => {
   const [fullAmigurumi, setFullAmigurumi] = useState(undefined);
@@ -25,8 +26,8 @@ const Preview = ({ createdAmigurumiId, createPiecesId }) => {
   }, [createdAmigurumiId, createPiecesId]);
 
   return (
-    <div>
-      {createdAmigurumiId === null && "There's no amigurumi yet!"}
+    <div className="d-flex justify-content-center flex-column">
+      {createdAmigurumiId === null && <NoAmigurumiAlert />}
       {fullAmigurumi !== undefined && (
         <AmigurumiDisplay fullAmigurumi={fullAmigurumi} />
       )}

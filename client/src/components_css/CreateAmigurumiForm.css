@@ -1,0 +1,21 @@
+h3 {
+  color: #8093f1;
+}
+
+p {
+  color: #b388eb;
+}
+
+img {
+  width: 80px;
+}
+
+.form-btn {
+  background-color: #8093f1;
+  border-color: #8093f1;
+}
+
+.form-btn:hover {
+  background-color: #b388eb;
+  border-color: #b388eb;
+}

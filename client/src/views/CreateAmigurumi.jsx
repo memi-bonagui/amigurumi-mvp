@@ -7,16 +7,20 @@ const CreateAmigurumi = () => {
   const [createPiecesId, setCreatePiecesId] = useState(null);
 
   return (
-    <div>
-      <Form
-        setCreatedAmigurumiId={setCreatedAmigurumiId}
-        createdAmigurumiId={createdAmigurumiId}
-        setCreatePiecesId={setCreatePiecesId}
-      />
-      <Preview
-        createdAmigurumiId={createdAmigurumiId}
-        createPiecesId={createPiecesId}
-      />
+    <div className="d-flex flex-row justify-content-around mt-4">
+      <div>
+        <Form
+          setCreatedAmigurumiId={setCreatedAmigurumiId}
+          createdAmigurumiId={createdAmigurumiId}
+          setCreatePiecesId={setCreatePiecesId}
+        />
+      </div>
+      <div className="mt-4">
+        <Preview
+          createdAmigurumiId={createdAmigurumiId}
+          createPiecesId={createPiecesId}
+        />
+      </div>
     </div>
   );
 };

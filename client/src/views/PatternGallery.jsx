@@ -25,7 +25,7 @@ const PatternGallery = () => {
   }, []);
 
   return (
-    <div>
+    <div className=" d-flex flex-row justify-content-evenly flex-wrap">
       {selectedAmigurumiId === null &&
         amigurumis.map((amigurumi) => (
           <PatternList

@@ -9,7 +9,6 @@
   background-attachment: fixed;
   background-size: cover;
   border-radius: 20px;
-  background-color: #247ba0;
   backdrop-filter: brightness(150%);
 }
 
@@ -17,7 +16,7 @@ h2,
 h4 {
   color: white;
   border-color: black;
-  text-shadow: 0 0 3px #0d1321, 0 0 5px #2d3142;
+  text-shadow: 0 0 10px #0d1321, 0 0 15px #2d3142;
   /* backdrop-filter: brightness(150%); */
 }
 
