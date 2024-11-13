@@ -1,4 +1,11 @@
-const PatternList = ({ amigurumis, setSelectedAmigurumiId }) => {
+import DeletePatternBtn from "./DeletePatternBtn";
+
+const PatternList = ({
+  getAmigurumis,
+  setAmigurumis,
+  amigurumis,
+  setSelectedAmigurumiId,
+}) => {
   console.log(amigurumis);
 
   const handleSelectedPattern = (amigurumi) => {
@@ -16,6 +23,11 @@ const PatternList = ({ amigurumis, setSelectedAmigurumiId }) => {
             See Pattern
           </button>
         </div>
+        <DeletePatternBtn
+          setAmigurumis={setAmigurumis}
+          amigurumis={amigurumis[0]}
+          getAmigurumis={getAmigurumis}
+        />
       </div>
     </div>
   );

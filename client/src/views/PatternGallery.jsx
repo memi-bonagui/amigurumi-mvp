@@ -33,6 +33,8 @@ const PatternGallery = () => {
             amigurumis={[amigurumi]}
             setSelectedAmigurumiId={setSelectedAmigurumiId}
             selectedAmigurumiId={selectedAmigurumiId}
+            setAmigurumis={setAmigurumis}
+            getAmigurumis={getAmigurumis}
           />
         ))}
       {selectedAmigurumiId !== null && (

@@ -1,16 +1,18 @@
-// import Banner from "./components/Banner";
-// import Menu from "./components/Menu";
-// import CreateAmigurumi from "./views/CreateAmigurumi";
+import Banner from "./components/Banner";
+import CreateAmigurumi from "./views/CreateAmigurumi";
 import PatternGallery from "./views/PatternGallery";
+import { Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
   return (
     <div>
-      {/* <Banner />
-      <Menu /> */}
-      {/* <CreateAmigurumi /> */}
-      <PatternGallery />
+      <Banner />
+      <Routes>
+        <Route path="/view-patterns" element={<PatternGallery />} />
+        <Route path="/add-pattern" element={<CreateAmigurumi />} />
+      </Routes>
     </div>
   );
 }
