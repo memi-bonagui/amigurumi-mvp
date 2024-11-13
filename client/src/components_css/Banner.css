@@ -1,0 +1,32 @@
+.img-banner {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.banner {
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/09/02/21/blanket-1245171_1280.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 20px;
+  background-color: #247ba0;
+  backdrop-filter: brightness(150%);
+}
+
+h2,
+h4 {
+  color: white;
+  border-color: black;
+  text-shadow: 0 0 3px #0d1321, 0 0 5px #2d3142;
+  /* backdrop-filter: brightness(150%); */
+}
+
+.my-button1 {
+  background-color: #b9fbc0;
+  border-color: #b9fbc0;
+}
+
+.my-button2 {
+  background-color: #cfbaf0;
+  border-color: #cfbaf0;
+}

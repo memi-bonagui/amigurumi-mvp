@@ -1,16 +1,30 @@
 import { Link } from "react-router-dom";
-// import PatternGallery from "../views/PatternGallery";
-// import CreateAmigurumi from "../views/CreateAmigurumi";
+import "../components_css/Banner.css";
 
 const Banner = () => {
   return (
-    <section className="container, text-center">
-      <div>My Amigurumi Keeper</div>
+    <section className="banner container text-center d-flex justify-content-between">
       <div>
-        Here you can add and keep safe your amigurumi and crochet patterns!
+        <img
+          className="img-banner py-2"
+          src="https://cdn.pixabay.com/photo/2023/05/18/08/13/bear-8001665_960_720.png"
+          alt="crochet dinosaur"
+        />
       </div>
-      <Link to="/view-patterns">View stored patterns</Link>
-      <Link to="/add-pattern">Add new patterns</Link>
+      <div className="p-3">
+        <h2 className="fw-medium my-3 fs-1">My Amigurumi Keeper</h2>
+        <h4 className="my-3 fs-3">
+          Add and keep safe your amigurumi and crochet patterns!
+        </h4>
+      </div>
+      <div className="d-flex flex-column justify-content-around">
+        <Link className="my-button1 btn btn-light my-3" to="/view-patterns">
+          View stored patterns
+        </Link>
+        <Link className="my-button2 btn btn-light my-3" to="/add-pattern">
+          Add new patterns
+        </Link>
+      </div>
     </section>
   );
 };
