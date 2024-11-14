@@ -9,20 +9,29 @@ const Banner = () => {
         <img
           className="img-banner py-2"
           src="https://cdn.pixabay.com/photo/2023/05/18/08/13/bear-8001665_960_720.png"
-          alt="crochet dinosaur"
+          alt="A white bear on a grey background"
         />
       </div>
       <div className="p-3">
         <h1 className="fw-bolder my-5 fs-1">My Amigurumi Keeper</h1>
       </div>
       <div className="d-flex flex-column justify-content-around">
-        <Link className="my-button1 btn btn-light my-3" to="/view-patterns">
+        <Link
+          className="my-button1 btn btn-secondary my-2 fw-bolder btn-lg"
+          to="/view-patterns"
+        >
           View stored patterns
         </Link>
-        <Link className="my-button2 btn btn-light my-3" to="/">
+        <Link
+          className="my-button2 btn btn-secondary my-2 fw-bolder btn-lg"
+          to="/"
+        >
           Back to homepage
         </Link>
-        <Link className="my-button3 btn btn-light my-3" to="/add-pattern">
+        <Link
+          className="my-button3 btn btn-secondary my-2 fw-bolder btn-lg"
+          to="/add-pattern"
+        >
           Add new patterns
         </Link>
       </div>

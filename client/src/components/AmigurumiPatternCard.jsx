@@ -39,7 +39,7 @@ const AmigurumisPatternCard = ({ selectedAmigurumiId }) => {
     <div>
       <div className="card mt-3">
         <img
-          src={selectedFullAmigurumi.imageUrl || "..."}
+          src={selectedFullAmigurumi.imageUrl}
           className="card-img-top"
           alt={`Picture of ${selectedFullAmigurumi.name}`}
         />
@@ -47,7 +47,7 @@ const AmigurumisPatternCard = ({ selectedAmigurumiId }) => {
           <h5 className="card-title">{selectedFullAmigurumi.name}</h5>
         </div>
       </div>
-      <div className="mb-3">
+      <div className="mb-1">
         {selectedFullAmigurumi.pieces && (
           <PiecesPatternCard pieces={selectedFullAmigurumi.pieces} />
         )}
