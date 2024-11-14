@@ -26,7 +26,7 @@ const PatternList = ({
           <h5 className="card-title pb-1 text-center">{amigurumis[0].name}</h5>
           <button
             type="button"
-            className="btn btn-primary"
+            className="btn btn-primary pattern-gallery-btn"
             onClick={() => handleSelectedPattern(amigurumis[0])}
           >
             See Pattern

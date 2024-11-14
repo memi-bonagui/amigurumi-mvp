@@ -130,7 +130,7 @@ const CreateAmigurumiForm = ({ setCreatedAmigurumiId }) => {
             onChange={handleChange}
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary form-btn">
+        <button type="submit" className="btn btn-primary form-btn mb-3">
           Submit
         </button>
       </form>

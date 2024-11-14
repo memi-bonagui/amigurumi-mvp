@@ -10,10 +10,10 @@
   background-size: cover;
   border-radius: 20px;
   backdrop-filter: brightness(150%);
+  margin-top: 10px;
 }
 
-h2,
-h4 {
+h1 {
   color: white;
   border-color: black;
   text-shadow: 0 0 10px #0d1321, 0 0 15px #2d3142;
@@ -23,9 +23,17 @@ h4 {
 .my-button1 {
   background-color: #b9fbc0;
   border-color: #b9fbc0;
+  color: #2d3142;
 }
 
 .my-button2 {
   background-color: #cfbaf0;
   border-color: #cfbaf0;
+  color: #2d3142;
+}
+
+.my-button3 {
+  background-color: #fe938c;
+  border-color: #fe938c;
+  color: #2d3142;
 }

@@ -1,0 +1,19 @@
+.form-pieces-title {
+  color: #8cb369;
+}
+
+.crochet-terms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: white;
+}
+
+.piece-form-btn {
+  background-color: #5b8e7d;
+  border-color: #5b8e7d;
+}
+
+.pieces-textarea {
+}

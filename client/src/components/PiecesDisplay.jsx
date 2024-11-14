@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import "../components_css/PiecesDisplay.css";
 
 const PiecesDisplay = ({ pieces }) => {
   console.log(pieces);
@@ -7,11 +8,12 @@ const PiecesDisplay = ({ pieces }) => {
       {pieces.map((piece) => {
         return (
           <Fragment key={piece.id}>
-            <div className="card border-info mb-3">
-              <div className="card-header">{piece.piece_name}</div>
+            <div className="card border-light mb-1">
+              <div className="card-header pieces-header fw-semibold">
+                {piece.piece_name}
+              </div>
               <div className="card-body">
-                <h5 className="card-title">nfo card titleI</h5>
-                <p className="card-text">{piece.pattern}</p>
+                <p className="card-text pattern-text">{piece.pattern}</p>
               </div>
             </div>
           </Fragment>

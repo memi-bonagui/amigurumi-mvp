@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import "../components_css/Banner.css";
 
 const Banner = () => {
@@ -12,16 +13,16 @@ const Banner = () => {
         />
       </div>
       <div className="p-3">
-        <h2 className="fw-medium my-3 fs-1">My Amigurumi Keeper</h2>
-        <h4 className="my-3 fs-3">
-          Add and keep safe your amigurumi and crochet patterns!
-        </h4>
+        <h1 className="fw-bolder my-5 fs-1">My Amigurumi Keeper</h1>
       </div>
       <div className="d-flex flex-column justify-content-around">
         <Link className="my-button1 btn btn-light my-3" to="/view-patterns">
           View stored patterns
         </Link>
-        <Link className="my-button2 btn btn-light my-3" to="/add-pattern">
+        <Link className="my-button2 btn btn-light my-3" to="/">
+          Back to homepage
+        </Link>
+        <Link className="my-button3 btn btn-light my-3" to="/add-pattern">
           Add new patterns
         </Link>
       </div>

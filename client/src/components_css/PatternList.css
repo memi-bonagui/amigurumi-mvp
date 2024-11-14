@@ -8,3 +8,13 @@
   width: 200px;
   object-fit: cover;
 }
+
+.pattern-gallery-btn {
+  background-color: #7678ed;
+  border-color: #7678ed;
+}
+
+.pattern-gallery-btn:hover {
+  background-color: #3d348b;
+  border-color: #3d348b;
+}
