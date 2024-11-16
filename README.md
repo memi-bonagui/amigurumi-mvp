@@ -103,3 +103,21 @@ Use Postman to test the current queries. After starting the server, check GET / 
 ## Notes
 
 _This is a student project that was created at [CodeOp](http://CodeOp.tech), a full stack development bootcamp in Barcelona._
+
+## Setup instruccions:
+
+- In in git bash execute > to clone the `git clone git@github.com:memi-bonagui/amigurumi-mvp.git`
+
+- How to setup the client
+  - npm install
+  - npm run dev
+  - folder structure
+- How to setup the server
+  - DB stuff => mysql version
+  - Create db if needed?
+  - npm install
+  - npm run dev
+  - How to setup the db
+  - Whats the folder structure
+    - where are the db files located
+    - where are the controllers / actions located
