@@ -22,12 +22,21 @@ Front End:
 
 ## Getting Started
 
+- In in git bash execute `git clone git@github.com:memi-bonagui/amigurumi-mvp.git` to clone the project
+
+### Database Prep
+
+Access the MySQL interface in your terminal by running mysql -u root -p
+
+You can find the files to configure the db under folder `server/data/init_db`. In here, you'll find my db name (my_mvp) and all the queries required for MySql
+
+Run npm run migrate in the project folder of this repository, in a new terminal window. This will create a table called 'amigurumis' and a second table with a foreign key called “pieces” in your database.
+
 ### Dependencies / server
 
-In the main repository, cd into the server folder
+You need to still be cd into the server folder.
 
 Run `npm install` to install Express dependencies.
-
 Run `npm run start` to start your server.
 
 The server Will run on port http://localhost:4000
@@ -54,6 +63,24 @@ This app is able to add different kind of crochet patterns, mostly dedicated to 
 
 It will also store all this patterns in an organized gallery, and the user is able to delete them if needed.
 
+### Folder structure
+
+The client, inside the src folder, has 3 principal folders: views, components and components_css.
+
+The views folder includes 2 components, one for the PatternGallery display and the other for the CreateAmigurumi forms.
+
+The components folder includes in total 13 components. 11 of them are children of the views components (Banner and Homepage are children from App)
+
+The components_css includes all CSS files from their respective components.
+
+### Browser structure
+
+In the main Home page, there are 2 principal views: The Gallery Pattern and the Add Amigurumi Forms were you’ll add your new amigurumi pattern
+
+This app is able to add different kind of crochet patterns, mostly dedicated to amigurumis (japanese art of knitting or crocheting small, stuffed yarn creatures).
+
+It will also store all this patterns in an organized gallery, and the user is able to delete them if needed.
+
 In the main Home page, there are 2 principal views: The Gallery Pattern and the Add Amigurumi Forms were you’ll add your new amigurumi pattern
 
 ### The Add Amigurumi Forms
@@ -69,6 +96,8 @@ Automatically, all this information you submit (patterns) Will be stored and ava
 Shows a grid of your stored pattern cards. Here the user will be able to delete the selected pattern, or fully display the selected amigurumi / crochet pattern.
 
 ## About the queries
+
+The routes are in server/routes/amigurumis.js
 
 Use Postman to test the current queries. After starting the server, check GET / on http://localhost:4000
 
@@ -103,21 +132,3 @@ Use Postman to test the current queries. After starting the server, check GET / 
 ## Notes
 
 _This is a student project that was created at [CodeOp](http://CodeOp.tech), a full stack development bootcamp in Barcelona._
-
-## Setup instruccions:
-
-- In in git bash execute > to clone the `git clone git@github.com:memi-bonagui/amigurumi-mvp.git`
-
-- How to setup the client
-  - npm install
-  - npm run dev
-  - folder structure
-- How to setup the server
-  - DB stuff => mysql version
-  - Create db if needed?
-  - npm install
-  - npm run dev
-  - How to setup the db
-  - Whats the folder structure
-    - where are the db files located
-    - where are the controllers / actions located
