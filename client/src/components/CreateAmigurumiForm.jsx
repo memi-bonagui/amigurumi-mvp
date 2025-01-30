@@ -95,7 +95,7 @@ const CreateAmigurumiForm = ({ setCreatedAmigurumiId }) => {
           </div>
         </div>
         <div className="form-check my-2">
-          <input
+          {/* <input
             className="form-check-input "
             type="checkbox"
             name="isCompleted"
@@ -118,7 +118,7 @@ const CreateAmigurumiForm = ({ setCreatedAmigurumiId }) => {
           />
           <label className="form-check-label" htmlFor="flexCheckChecked">
             Is this project one of your favorites?
-          </label>
+          </label> */}
         </div>
         <div className="mb-4 my-4">
           <textarea
